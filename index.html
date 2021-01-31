@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+<form class="tel-form">
+    <div>
+        <label for="tel1">Введите номер телефона </label>
+        <input class="input1" type="tel" id="tel1" name="tel1" size="25"
+               pattern="(\+3\d{11,13})" placeholder="+380" maxlength="13" minlength="10">
+        <span class="form__error">Это поле должно содержать номер телефона</span>
+        <p>формат +12133456</p>
+    </div>
+    <div>
+        <button class="btn">Submit</button>
+    </div>
+</form>
+<form class="tel-form">
+    <div>
+        <label for="tel1">Введите номер телефона </label>
+        <input class="input1" type="tel" id="tel1" name="tel1" size="25"
+               pattern="^((\+)[\- ]?)?[\d\- ]{7,13}$" placeholder="+380/+7" maxlength="13" minlength="8">
+        <span class="form__error">Это поле должно содержать номер телефона</span>
+        <p>формат +12133456</p>
+    </div>
+    <div>
+        <button class="btn">Submit</button>
+    </div>
+</form>
+
+</body>
+</html>

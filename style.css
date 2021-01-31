@@ -1,0 +1,53 @@
+body {
+    height: 100%;
+    display: flex;
+}
+
+.tel-form {
+    margin: 100px auto;
+    width: 200px;
+    padding: 40px;
+    border: 1px solid black;
+    background: azure;
+}
+
+.btn {
+    margin-top: 20px;
+    font-size: 25px;
+    background-color: aquamarine;
+    border: 1px solid red;
+}
+
+.input1 {
+    border: none;
+    border-bottom: 2px solid black;
+    color: black;
+}
+
+
+.form__error {
+    color: plum;
+    text-align: left;
+    font-size: 15px;
+    display: block;
+    margin-top: 15px;
+    display: none;
+}
+
+input:valid:not(:placeholder-shown) {
+    border-color: green;
+}
+
+input:invalid:not(:placeholder-shown) {
+    border-color: red;
+}
+
+input:invalid:not(:placeholder-shown) + .form__error {
+    display: block;
+}
+
+p {
+    color: darkgoldenrod;
+    border: 3px dashed orange;
+    margin-top: 50px;
+}
